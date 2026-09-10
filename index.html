@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessible and performance-optimized student web page.">
+  <title>Student Learning Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#" aria-label="Student Learning Hub home">Student Learning Hub</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Learn • Practice • Grow</p>
+          <h1 id="hero-title">Build your web development skills.</h1>
+          <p class="hero-text">Explore beginner-friendly resources for HTML, CSS, JavaScript, accessibility and performance.</p>
+          <a class="button" href="#resources">Explore resources</a>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=75"
+          width="900" height="600"
+          alt="Laptop displaying web development code on a desk"
+          loading="eager"
+          fetchpriority="high">
+      </div>
+    </section>
+
+    <section id="resources" class="section" aria-labelledby="resources-title">
+      <div class="container">
+        <h2 id="resources-title">Learning resources</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>HTML & Semantic Structure</h3>
+            <p>Learn headings, landmarks, forms and meaningful HTML elements.</p>
+            <a href="#contact" aria-label="Get HTML and semantic structure support">Learn more</a>
+          </article>
+          <article class="card">
+            <h3>CSS & Responsive Design</h3>
+            <p>Create clean layouts that work well on phones, tablets and desktops.</p>
+            <a href="#contact" aria-label="Get CSS and responsive design support">Learn more</a>
+          </article>
+          <article class="card">
+            <h3>Accessibility & Performance</h3>
+            <p>Improve keyboard access, screen-reader support, loading speed and usability.</p>
+            <a href="#contact" aria-label="Get accessibility and performance support">Learn more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="checklist-title">
+      <div class="container">
+        <h2 id="checklist-title">Accessibility checklist</h2>
+        <ul class="checklist">
+          <li>Keyboard-friendly navigation and visible focus states</li>
+          <li>Semantic landmarks and a logical heading hierarchy</li>
+          <li>Descriptive alternative text for meaningful images</li>
+          <li>Readable text and sufficient color contrast</li>
+          <li>Responsive layout for different screen sizes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container narrow">
+        <h2 id="contact-title">Contact</h2>
+        <p>If you need help with the learning resources, send a message.</p>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="button" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Student Learning Hub. Built with accessible web practices.</p>
+    </div>
+  </footer>
+</body>
+</html>
